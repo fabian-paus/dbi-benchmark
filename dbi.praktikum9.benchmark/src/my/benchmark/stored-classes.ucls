@@ -1,0 +1,43 @@
+<class-diagram version="1.0.11" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <interface id="1" corner="BOTTOM_RIGHT" language="java" name="my.benchmark.Transaction" 
+    project="dbi.praktikum9.benchmark" file="/dbi.praktikum9.benchmark/src/my/benchmark/Transaction.java" binary="false">    
+    <position height="-1" width="-1" x="773" y="147"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="2" corner="BOTTOM_RIGHT" language="java" name="my.benchmark.StoredProcedureTransactions" 
+    project="dbi.praktikum9.benchmark" 
+    file="/dbi.praktikum9.benchmark/src/my/benchmark/StoredProcedureTransactions.java" binary="false">    
+    <position height="-1" width="-1" x="164" y="148"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" corner="BOTTOM_RIGHT" language="java" name="my.benchmark.DepositMoneyTransaction" 
+    project="dbi.praktikum9.benchmark" file="/dbi.praktikum9.benchmark/src/my/benchmark/DepositMoneyTransaction.java" 
+    binary="false">    
+    <position height="-1" width="-1" x="488" y="147"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <generalization id="4">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </generalization>  
+  <realization id="5">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

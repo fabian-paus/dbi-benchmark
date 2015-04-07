@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Benchmark</comment>
+<entry key="database.jdbc">jdbc:postgresql://192.168.10.209/ntps</entry>
+<entry key="loaddrivers">5</entry>
+<entry key="database.class">my.benchmark.PostgreSqlDatabase</entry>
+<entry key="log.level">FINE</entry>
+<entry key="warmup.time">240</entry>
+<entry key="benchmark.time">300</entry>
+<entry key="cooldown.time">60</entry>
+<entry key="thinktime">50</entry>
+<entry key="user.n">50</entry>
+<entry key="user.database.username">dbi</entry>
+<entry key="user.database.password">dbi_pass</entry>
+<entry key="user.tx.account-balance">my.benchmark.PreparedStatementTransactions</entry>
+<entry key="user.tx.deposit-money">my.benchmark.StoredProcedureTransactions</entry>
+<entry key="user.tx.count-delta">my.benchmark.PreparedStatementTransactions</entry>
+</properties>

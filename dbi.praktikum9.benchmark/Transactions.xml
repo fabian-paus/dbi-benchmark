@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Transactions</comment>
+<entry key="kontostandsTX">4</entry>
+<entry key="einzahlungsTX">5</entry>
+<entry key="analyseTX">1</entry>
+</properties>

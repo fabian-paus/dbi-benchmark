@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="true" classpath="." destdir="doc" doctitle="Framework zum Datenbank-Benchmarking" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" overview=".\src\overview.html" packagenames="de.whs.dbi.util,de.whs.dbi.benchmark,de.whs.dbi.loaddriver" source="1.7" sourcepath="src" splitindex="true" use="true" version="true" executable="C:\Program Files\Java\jdk1.7.0_05\bin\javadoc.exe"/>
+    </target>
+</project>

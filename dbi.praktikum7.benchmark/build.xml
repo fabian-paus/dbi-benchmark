@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     15.11.2012 16:19:17                                                        
+
+     dbi.prakikum7.benchmark    
+     Build-File zum Praktikum 7, Benchmark Messungen auf dem PostgreSQL-DBMS
+                   
+     Marcus Büscher                                                               
+     ====================================================================== -->
+<project name="dbi.prakikum7.benchmark" default="prepare">
+    <description>
+            Build File zum Praktikum 7, Benchmark Messungen der Postqres 9.2 DB
+    </description>	
+		
+	<property name="build.dir"						value="build"/>
+	<property name="src.dir"						value="src"/>
+	<property name="javadoc.dir" 					value="targets/javadoc"/>
+	<property name="doc.dir"						value="doc"/>
+	<property name="jar.dir"						value="JarFile"/>
+	<property name="bin.dir"						value="bin"/>
+
+    <!-- ================================= 
+          target: prepare           
+         ================================= -->
+    <target name="prepare" depends="info, javaDoc, JarFile" description="Build-File zum Praktikum 7, Benchmark Messungen der Postqres 9.2 DB">
+        
+    </target>
+
+    <!-- ================================= 
+          target: info           
+         ================================= -->
+    <target name="info">
+    	<echo>Build-File zum Praktikum 7, Benchmark Messungen der Postqres 9.2 DB</echo>
+    	<echo>${ant.version}</echo>
+    	<echo>Java Version ${java.version}</echo>
+    </target>	
+
+    <!-- ================================= 
+          target: compile           
+         ================================= -->
+    <target name="compile">
+    	<delete dir="${build.dir}"/>
+    	<mkdir dir="${build.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${build.dir}"/>
+    </target>
+	
+    <!-- ================================= 
+          target: JavaDoc           
+         ================================= -->
+    <target name="javaDoc" description="Kopiert die Javadoc-API-Beschreibungen.">
+    	<delete dir="${doc.dir}"/>
+    	<mkdir dir="${doc.dir}"/>
+    	<javadoc sourcepath="${src.dir}" destdir="${doc.dir}"/>
+    </target>
+	
+    <!-- ================================= 
+          target: Baut die JAR-Datei           
+         ================================= -->
+    <target name="JarFile" description="Baut die JAR-Datei">
+    	<delete dir="${jar.dir}"/>
+    	<mkdir dir="${jar.dir}"/>
+        <jar jarfile="${jar.dir}/${jar.dir}.jar">
+          <fileset dir="${bin.dir}"/>
+        </jar>
+    </target>
+
+</project>
